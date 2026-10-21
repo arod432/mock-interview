@@ -1,0 +1,29 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #193c36;
+  background: #f4f6f2;
+  font-synthesis: none;
+  line-height: 1.55;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 4px 0; letter-spacing: -0.04em; }
+header > p { margin-top: 8px; color: #526760; }
+.eyebrow, .category { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.controls { background: white; border: 1px solid #d9e2db; border-radius: 12px; padding: 24px; margin: 28px 0; }
+.controls > label:first-child { display: block; font-weight: 600; margin-bottom: 8px; }
+input[type='search'] { width: 100%; padding: 12px; border: 1px solid #81968a; border-radius: 6px; font: inherit; }
+.checkbox { display: flex; align-items: center; gap: 10px; margin-top: 16px; cursor: pointer; }
+input[type='checkbox'] { width: 18px; height: 18px; accent-color: #24694e; }
+:focus-visible { outline: 3px solid #296cba; outline-offset: 3px; }
+.result-count, footer { color: #526760; font-size: 0.9rem; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 16px; padding: 0; list-style: none; }
+.product { background: white; padding: 22px; border: 1px solid #d9e2db; border-radius: 10px; }
+.product h2 { font-size: 1.1rem; line-height: 1.3; margin: 10px 0; }
+.product p { color: #526760; font-size: 0.9rem; }
+.product strong { display: block; margin-top: 18px; }
+[role='alert'] { background: #fff0ec; color: #92341e; padding: 16px; border-radius: 8px; }
+footer { margin-top: 40px; }
+a { color: #24694e; }
